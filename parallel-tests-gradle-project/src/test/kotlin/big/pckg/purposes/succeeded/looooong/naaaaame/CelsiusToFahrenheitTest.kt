@@ -1,6 +1,6 @@
-package big.`package`.name.`for`.test.purposes
+package big.pckg.purposes.succeeded.looooong.naaaaame
 
-import com.jetbrains.converters.regular.`package`.name.CelsiusToFahrenheitConverter
+import com.jetbrains.converters.regular.pckg.name.CelsiusToFahrenheitConverter
 import org.testng.Assert.assertEquals
 import org.testng.annotations.DataProvider
 import org.testng.annotations.Test

@@ -1,4 +1,4 @@
-package com.jetbrains.converters.regular.`package`.name
+package com.jetbrains.converters.regular.pckg.name
 
 /**
  * A simple object that converters C to F.

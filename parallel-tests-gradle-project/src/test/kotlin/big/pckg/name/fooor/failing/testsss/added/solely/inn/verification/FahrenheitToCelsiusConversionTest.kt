@@ -1,7 +1,6 @@
-package big.`package`.name.failing
+package big.pckg.name.fooor.failing.testsss.added.solely.inn.verification
 
-import com.jetbrains.converters.big.`package`.name.created.solely.`for`.testing.purposes.FahrenheitToCelsiusConverter
-import org.testng.Assert
+import com.jetbrains.converters.big.pckg.a.really.looong.naaaaame.fooooor.teeeests.FahrenheitToCelsiusConverter
 import org.testng.Assert.assertEquals
 import org.testng.annotations.DataProvider
 import org.testng.annotations.Test

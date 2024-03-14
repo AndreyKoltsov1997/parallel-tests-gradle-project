@@ -1,4 +1,4 @@
-package com.jetbrains.converters.big.`package`.name.created.solely.`for`.testing.purposes
+package com.jetbrains.converters.big.pckg.a.really.looong.naaaaame.fooooor.teeeests
 
 /**
  * A simple object that converters F to C.

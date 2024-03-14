@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="A suite created for test parallelization purposes">
+    <test name="Succeeding test">
+        <classes>
+            <class name="big.pckg.purposes.succeeded.looooong.naaaaame.CelsiusToFahrenheitTest"/>
+        </classes>
+    </test>
+
+    <test name="Failing test">
+        <classes>
+            <class name="big.pckg.name.fooor.failing.testsss.added.solely.inn.verification.FahrenheitToCelsiusConversionTest"/>
+        </classes>
+    </test>
+
+    <test name="Multiple dependant tests, each one depend on another">
+        <classes>
+            <class name="big.pckg.dependent.DependantTests"/>
+        </classes>
+    </test>
+</suite>

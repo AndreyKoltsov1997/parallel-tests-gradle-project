@@ -1,7 +1,7 @@
 package com.jetbrains
 
-import com.jetbrains.converters.big.`package`.name.created.solely.`for`.testing.purposes.FahrenheitToCelsiusConverter
-import com.jetbrains.converters.regular.`package`.name.CelsiusToFahrenheitConverter
+import com.jetbrains.converters.big.pckg.a.really.looong.naaaaame.fooooor.teeeests.FahrenheitToCelsiusConverter
+import com.jetbrains.converters.regular.pckg.name.CelsiusToFahrenheitConverter
 import java.util.*
 
 fun main(args: Array<String>) {
