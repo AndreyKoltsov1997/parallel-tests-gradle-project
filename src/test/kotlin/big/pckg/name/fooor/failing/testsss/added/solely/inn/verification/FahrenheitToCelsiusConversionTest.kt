@@ -12,6 +12,18 @@ class FahrenheitToCelsiusConversionTest {
         assertEquals(result, expectedCelsius, 0.001, "Conversion from Fahrenheit to Celsius is incorrect")
     }
 
+    @Test(priority = -1)
+    fun `first test with higher priority`() {
+        val result = FahrenheitToCelsiusConverter.convert(32.0)
+        assertEquals(result, 0.0, 0.001, "Conversion from Fahrenheit to Celsius is incorrect")
+    }
+
+    @Test(priority = -1)
+    fun `second test with higher priority`() {
+        val result = FahrenheitToCelsiusConverter.convert(212.0)
+        assertEquals(result, 100.0, 0.001, "Conversion from Fahrenheit to Celsius is incorrect")
+    }
+
     @DataProvider(name = "conversionDataFahrenheitToCelsius")
     fun conversionDataFahrenheitToCelsius(): Array<Array<Double>> {
         return arrayOf(
