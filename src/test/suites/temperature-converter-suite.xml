@@ -14,7 +14,7 @@
 
     <test name="Failing Test without priorities">
         <classes>
-            <class name="big.pckg.name.fooor.failing.testsss.added.solely.inn.verification.FahrenheitToCelsiusConversionTest_NoPriorities"/>
+            <class name="big.pckg.name.fooor.failing.testsss.added.solely.inn.verification.FahrenheitToCelsiusConversionTest_200tests"/>
         </classes>
     </test>
 
