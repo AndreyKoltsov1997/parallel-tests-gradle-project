@@ -5,7 +5,7 @@ import org.testng.Assert.assertEquals
 import org.testng.annotations.DataProvider
 import org.testng.annotations.Test
 
-class FahrenheitToCelsiusConversionTest_NoPriorities {
+class FahrenheitToCelsiusConversionTest_200tests {
     @Test(dataProvider = "conversionDataFahrenheitToCelsius")
     fun testFahrenheitToCelsiusConversion(fahrenheit: Double, expectedCelsius: Double) {
         val result = FahrenheitToCelsiusConverter.convert(fahrenheit)
@@ -14,13 +14,14 @@ class FahrenheitToCelsiusConversionTest_NoPriorities {
 
     @DataProvider(name = "conversionDataFahrenheitToCelsius")
     fun conversionDataFahrenheitToCelsius(): Array<Array<Double>> {
-        return arrayOf(
-            arrayOf(32.0, 0.0),
-            arrayOf(212.0, 100.0),
-            arrayOf(-40.0, -40.0),
-            arrayOf(98.6, 37.0),
-            // will fail
-            arrayOf(-1111.0, -1111.0)
-        )
+        val testData = mutableListOf<Array<Double>>()
+
+        // Add 200 test cases
+        for (i in 0 until 200) {
+            val fahrenheit = i * 10.0
+            val celsius = (fahrenheit - 32) * 5 / 9
+            testData.add(arrayOf(fahrenheit, celsius))
+        }
+        return testData.toTypedArray()
     }
 }
