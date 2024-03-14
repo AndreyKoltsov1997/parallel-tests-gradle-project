@@ -18,10 +18,6 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
-kotlin {
-    jvmToolchain(21)
-}
-
 
 /**
  * Runs the suite with 3 types of tests:
