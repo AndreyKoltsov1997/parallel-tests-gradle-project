@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="A suite created for test parallelization purposes. It has only succeeding tests.">
+    <test name="Succeeding test">
+        <classes>
+            <class name="big.pckg.purposes.succeeded.looooong.naaaaame.CelsiusToFahrenheitTest"/>
+            <class name="big.pckg.purposes.succeeded.looooong.naaaaame.CelsiusToFahrenheitTest_200tests"/>
+        </classes>
+    </test>
+
+</suite>

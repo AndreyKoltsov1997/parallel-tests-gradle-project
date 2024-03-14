@@ -30,3 +30,12 @@ tasks.register<Test>("runSuiteWithDifferentTestTypes") {
         suites("src/test/suites/temperature-converter-suite.xml")
     }
 }
+
+/**
+ * Runs a suite with succeeding tests.
+ */
+tasks.register<Test>("runSuiteWithSucceedingTests") {
+    useTestNG() {
+        suites("src/test/suites/temperature-converter-suite-with-successful-tests.xml")
+    }
+}
