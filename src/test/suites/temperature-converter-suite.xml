@@ -6,9 +6,15 @@
         </classes>
     </test>
 
-    <test name="Failing test">
+    <test name="Failing test with priorities">
         <classes>
             <class name="big.pckg.name.fooor.failing.testsss.added.solely.inn.verification.FahrenheitToCelsiusConversionTest"/>
+        </classes>
+    </test>
+
+    <test name="Failing Test without priorities">
+        <classes>
+            <class name="big.pckg.name.fooor.failing.testsss.added.solely.inn.verification.FahrenheitToCelsiusConversionTest_NoPriorities"/>
         </classes>
     </test>
 
