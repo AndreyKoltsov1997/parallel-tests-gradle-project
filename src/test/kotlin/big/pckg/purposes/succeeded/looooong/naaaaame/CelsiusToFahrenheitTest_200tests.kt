@@ -18,9 +18,13 @@ class CelsiusToFahrenheitTest_200tests {
     fun conversionDataCelsiusToFahrenheit(): Array<Array<Double>> {
         val testData = mutableListOf<Array<Double>>()
 
+        // Fix seed to have a predictable test name
+        val seed = 1L
+        val randomGenerator = Random(seed)
+
         // Add 200 test cases
         for (i in 0 until 200) {
-            val celsius = Random.nextDouble(-273.15, 1000.0) // Generate random Celsius value between -273.15°C and 1000°C
+            val celsius = randomGenerator.nextDouble(-273.15, 1000.0) // Generate random Celsius value between -273.15°C and 1000°C
             val fahrenheit = celsius * 9 / 5 + 32
             testData.add(arrayOf(celsius, fahrenheit))
         }
