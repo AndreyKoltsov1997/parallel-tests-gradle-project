@@ -23,11 +23,11 @@ tasks.test {
  * Runs the suite with 3 types of tests:
  * - Succeeding;
  * - Failing;
- * - Dependant on one another, failing at the end;
+ * - Dependent on one another, failing at the end;
  */
 tasks.register<Test>("runSuiteWithDifferentTestTypes") {
-    useTestNG() {
-        suites("src/test/suites/temperature-converter-suite.xml")
+    useTestNG {
+        suites("src/test/suites/temperature-converter-suite-with-mixed-tests.xml")
     }
 }
 
@@ -35,7 +35,13 @@ tasks.register<Test>("runSuiteWithDifferentTestTypes") {
  * Runs a suite with succeeding tests.
  */
 tasks.register<Test>("runSuiteWithSucceedingTests") {
-    useTestNG() {
+    useTestNG {
         suites("src/test/suites/temperature-converter-suite-with-successful-tests.xml")
+    }
+}
+
+tasks.register<Test>("runSuiteWithFailingTests") {
+    useTestNG {
+        suites("src/test/suites/temperature-converter-suite-with-failing-tests.xml")
     }
 }

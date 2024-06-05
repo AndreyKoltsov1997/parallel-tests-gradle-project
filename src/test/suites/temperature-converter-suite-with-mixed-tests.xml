@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="A suite with mixed types of tests: succeeding, failing, skipped">
+    <test name="Succeeding">
+        <classes>
+            <class name="big.pckg.purposes.succeeded.looooong.naaaaame.CelsiusToFahrenheitTest"/>
+            <class name="big.pckg.purposes.succeeded.looooong.naaaaame.CelsiusToFahrenheitTest_200tests"/>
+        </classes>
+    </test>
+
+    <test name="Failing">
+        <classes>
+            <class name="big.pckg.name.fooor.failing.testsss.added.solely.inn.verification.FahrenheitToCelsiusConversionTest_200tests"/>
+        </classes>
+    </test>
+
+
+    <test name="Skipped">
+        <classes>
+            <class name="big.pckg.dependent.DependantTests"/>
+        </classes>
+    </test>
+</suite>
