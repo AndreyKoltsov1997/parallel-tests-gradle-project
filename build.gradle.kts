@@ -51,3 +51,15 @@ tasks.register<Test>("runAllSuitesAtOnce") {
         suites("src/test/suites/all-suites-at-once.xml")
     }
 }
+
+
+
+tasks.register<Test>("runWithoutSuite") {
+    useTestNG() {
+        include("big/pckg/purposes/succeeded/looooong/naaaaame/CtoF_200tests_differentName.class")
+        include("big/pckg/purposes/succeeded/looooong/naaaaame/FahrenheitToCelsiusConversionTest_200tests.class")
+        include("big/pckg/name/fooor/failing/testsss/added/solely/inn/verification/FahrenheitToCelsiusConversionTest_200tests.class")
+        include("big/pckg/name/fooor/failing/testsss/added/solely/inn/verification/FahrenheitToCelsiusConversionTest.class")
+
+    }
+}
