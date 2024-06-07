@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="A second successful test suite, used for parallelization.">
+    <test name="205 succeeding tests">
+        <classes>
+            <class name="big.pckg.purposes.succeeded.looooong.naaaaame.CtoF_200tests_differentName"/>
+        </classes>
+    </test>
+</suite>

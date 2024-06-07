@@ -45,3 +45,9 @@ tasks.register<Test>("runSuiteWithFailingTests") {
         suites("src/test/suites/temperature-converter-suite-with-failing-tests.xml")
     }
 }
+
+tasks.register<Test>("runAllSuitesAtOnce") {
+    useTestNG() {
+        suites("src/test/suites/all-suites-at-once.xml")
+    }
+}
