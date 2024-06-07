@@ -18,7 +18,7 @@ class CtoF_200tests_differentName {
         Assert.assertEquals(result, expectedFahrenheit, 0.001, "Conversion from Celsius to Fahrenheit is incorrect")
     }
 
-    @DataProvider(name = "conversionDataCelsiusToFahrenheit")
+    @DataProvider(name = "cToFDataProvider")
     fun cToFDataProvider(): Array<Array<Double>> {
         val testData = mutableListOf<Array<Double>>()
 
